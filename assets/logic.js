@@ -35,6 +35,12 @@ hour.forEach(function(time){
 
 });
 
-// waiting to perform functions until page is loaded.
+// waiting to perform functions until entire page is loaded.
 
 $(document).ready( () => {
+
+// creating save button to go to local storage on click -- selecting previous index of the button
+
+    $(".saveBtn").on("click", function(){
+        localStorage.setItem($(this).prev("textarea").attr("dataStorage"),$(this).prev("textarea").val());
+    });
