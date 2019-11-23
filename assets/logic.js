@@ -16,3 +16,7 @@ hour.forEach(function(time){
 
 // appending each variable
     row.append(hours, text, btn);
+
+ // appending row to container class
+
+ $(".container").append(row);
