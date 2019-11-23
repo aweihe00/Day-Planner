@@ -50,7 +50,6 @@ $(document).ready( () => {
 $("*[dataStorage]").each(function(){
     $(this).val(localStorage.getItem($(this).attr("dataStorage"))
 )});
-
 });
 
 // getting new date and times
@@ -58,3 +57,16 @@ $("*[dataStorage]").each(function(){
 var newDate = new Date()
     var newHour = newDate.getHours();
     console.log(newHour);
+
+    $("*[dataStorage").each(function(){
+        if (parseInt($(this).attr("dataStorage")) === newHour){
+
+            $(this).addClass("present").removeClass("past future");
+
+        }else if(parseInt($(this).attr("dataStorage")) < newHour){
+            $(this).addClass("past").removeClass("present future");
+
+        }else{
+            $(this).addClass("future").removeClass("past present");
+        };
+    });
