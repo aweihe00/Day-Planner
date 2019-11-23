@@ -10,3 +10,6 @@ hour.forEach(function(time){
     var btn = $("<button>").addClass("saveBtn fas fa-save");
     var row = $("<div>").addClass("row");
     var hours = $("<div>").addClass("hour");
+
+// parsing hour array 
+    let any = parseInt(time);
