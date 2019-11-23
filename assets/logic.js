@@ -20,3 +20,18 @@ hour.forEach(function(time){
  // appending row to container class
 
  $(".container").append(row);
+
+// checking if time is greater or less than 12 and setting AM/PM
+
+    if(any < 12){
+        hours.text(time + "am");
+
+    }else if(any > 12){
+        hours.text(time - 12 + "pm");
+
+    }else{ 
+    hours.text(time + "pm");
+    }
+
+});
+
