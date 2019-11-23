@@ -52,3 +52,9 @@ $("*[dataStorage]").each(function(){
 )});
 
 });
+
+// getting new date and times
+
+var newDate = new Date()
+    var newHour = newDate.getHours();
+    console.log(newHour);
