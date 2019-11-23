@@ -70,3 +70,6 @@ var newDate = new Date()
             $(this).addClass("future").removeClass("past present");
         };
     });
+
+    console.log(parseInt("dataStorage"));
+    console.log(newHour);
