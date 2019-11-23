@@ -44,3 +44,11 @@ $(document).ready( () => {
     $(".saveBtn").on("click", function(){
         localStorage.setItem($(this).prev("textarea").attr("dataStorage"),$(this).prev("textarea").val());
     });
+
+// grabbing everything within the data attr -- returns from local storage.
+
+$("*[dataStorage]").each(function(){
+    $(this).val(localStorage.getItem($(this).attr("dataStorage"))
+)});
+
+});
