@@ -1,14 +1,19 @@
 # Day-Planner
 Unit 05 Third-Party APIs Homework: Day Planner
 
-Link to deployed site https://aweihe00.github.io/Day-Planner/ 
+Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+The app should display standard business hours (9 a.m. to 5 p.m.). Each time slot should represent one hour and contain the following:
+1. The time
+2. A field to hold user input
+3. A save button
+
+Clicking on the save button will store the time and user input in localStorage.
+Near the top of the calendar, the application should display the current day. Additionally, each hour should be color coded to reflect whether the time slot is in the past, the present, or the future. This will change depending on the time of day.
+
+Business Context:
+
+Poor time management can result in missed meetings and deadlines or create the appearance of unprofessionalism. A daily planner allows employees to see their day at a glance, schedule time effectively, and improve productivity.
 
 ![image](https://user-images.githubusercontent.com/56567819/71122296-db40d100-21a5-11ea-95da-866f1bbe8ee2.png)
 
-Overview
-When developers find themselves repeating a task, they tend to look for a way to simplify their workflow. We saw earlier how CSS frameworks were developed to ensure consistency across applications and to expedite developer workflows. Tools with similar goals have emerged in the JavaScript ecosystem.
-jQuery is a JavaScript library that simplifies DOM manipulation and event handling. It allows us to write fewer lines of code than we'd need to if we were using plain ol' JavaScript to accomplish the same end. jQuery also provides a number of methods for animations and working with APIs.
-Some argue that jQuery is slowly being phased out and replaced with front-end frameworks such as React. You might not see as many job listings for jQuery developers, but it’s an important skill to master as the library is still widely used in both new and legacy code
-
-Homework: Day Planner
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+Link to deployed site https://aweihe00.github.io/Day-Planner/ 
